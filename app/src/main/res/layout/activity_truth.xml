@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Truth"
+    android:background="#F5BCBA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5BCBA">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Some Choices For You...."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_below="@+id/textView2"
+        android:id="@+id/editText"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:ems="10"
+        android:gravity="center|start|top"
+        android:inputType="textMultiLine"
+        android:text="1. What is your deepest darkest fear? \n  \n 2. What is your biggest regret?  \n \n 3. Who is your crush? \n \n 4. Have you ever cheated or been cheated on? \n  \n 5. Tell me about your most awkward date. \n  \n 6.  What are you most self-conscious about?  \n \n 7. What is the biggest lie you have ever told? \n \n 8. Tell us your most embarrassing vomit story. \n \n 9.  What is the naughtiest thing you’ve done in public? \n  \n10.  What is the biggest thing you’ve gotten away with? \n \n"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:layout_below="@+id/editText"
+        android:layout_width="367dp"
+        android:layout_height="48dp"
+        android:hint="Any Suggestion...."
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="22dp"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

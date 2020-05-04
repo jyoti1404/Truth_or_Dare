@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5BCBA"
+    tools:context=".Dare">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5BCBA">
+
+        <EditText
+        android:id="@+id/editText3"
+        android:layout_width="367dp"
+        android:layout_height="48dp"
+        android:hint="Any Suggestion...."
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:layout_editor_absoluteX="22dp"
+        android:layout_below="@+id/editText2"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Some Choices For You...."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:layout_below="@+id/textView3"
+        android:layout_margin="10dp"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="1. How long have you gone without brushing your teeth? \n \n 2. What's one thing you would never eat on a first date?  \n \n 3. What have you seen that you wish you could unsee? \n \n 4. If you could be reincarnated into anyone's body, who would you want to become? \n \n 5. If you switched genders for the day, what would you do? \n \n 6.  What's one food that you will never order at a restaurant? \n \n "
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="89dp"
+        tools:ignore="MissingConstraints" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
